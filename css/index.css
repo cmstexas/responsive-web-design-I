@@ -304,6 +304,10 @@ button {
         word-spacing: 40px;
     }
 
+    .navlist div a{
+        padding: 1000px;
+    }
+
     .servicesnav{
         margin-bottom: 20px;
         border-bottom: 3px solid black;
