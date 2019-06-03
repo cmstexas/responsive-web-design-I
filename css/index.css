@@ -69,17 +69,50 @@ h1, h2, h3, h4, h5 {
 
 .navmenu {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
 	font-size: 20px;
-	word-spacing: 75px;
+	word-spacing: 100px;
 	margin-left: 50px;
     margin-right: 15px;
-    margin-top: 25px;
+    margin-top: 30px;
     padding 350px;
 }
 
+.servicesnav{
+    margin-right: 30px;
+
+}
+
+.productnav{
+    margin-right: 30px;
+}
+
+.visionnav{
+    margin-right: 30px;
+}
+
+.featuresnav{
+    margin-right: 30px;
+}
+
+.aboutnav{
+    margin-right: 30px;
+}
+
+.contactnav{
+    margin-right: 30px;
+}
+
+
 .logo{
-    margin-top: -10px;
+    margin-top: 20px;
 
 }
 
@@ -204,22 +237,22 @@ button {
 
   @media(max-width: 800px) {
     
-    nav{
-        display: flex;
-        flex-direction: column-reverse;
-
-    }
-
-    .navmenu{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .logo{
+     .navmenu{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        }
+    }
+
+    .navlist{
+        margin-top: 30px;
+        margin-left: 75px;
+        word-spacing: 65px;
+    }
+
+    .logo{
+        margin-left: 85px;
+        margin-top:30px;
+    }
 
     .circleimage{
         display:none;
@@ -238,20 +271,16 @@ button {
     }
 
     .toptext{
-        display: flex;
-        align-items: center;
-        width: 95%;
+        width: 85%;
     }
 
     .middle-img{
         display: flex;
-        align-items: center;
-        width: 95%;
+        justify-items: center;
+        width: 85%;
         }   
 
     .bottomtext{
-        display: flex;
-        align-items: center;
         width: 95%;
     }
 
@@ -261,18 +290,55 @@ button {
   
   @media(max-width: 500px) {
     
-    .navcontainer {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
     .navmenu{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-evenly;
-        margin-bottom: 30px;
+    }
+
+    .navlist{
+        display: flex;
+        flex-direction: column;
         margin-top: 30px;
+        margin-left: 20px;
+        word-spacing: 40px;
+    }
+
+    .servicesnav{
+        margin-bottom: 20px;
+        border-bottom: 3px solid black;
+
+    }
+
+    .productnav{
+        margin-bottom: 20px;
+        border-bottom: 3px solid black;
+    }
+
+    .visionnav{
+        margin-bottom: 20px;
+        border-bottom: 3px solid black;
+    }
+
+    .featuresnav{
+        margin-bottom: 20px;
+        border-bottom: 3px solid black;
+    }
+
+    .aboutnav{
+        margin-bottom: 20px;
+        border-bottom: 3px solid black;
+    }
+
+    .contactnav{
+        margin-bottom: 20px;
+        border-bottom: 3px solid black;
+    }
+
+
+    .logo{
+        margin-left: 55px;
+        margin-top:30px;
     }
 
 
@@ -291,7 +357,7 @@ button {
         display:flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 90%;
+        margin-left: 20px;
     }
 
     .featurescontainer{
@@ -299,15 +365,43 @@ button {
     }
 
     .middle-img{
-        width: 50%;
+        display:flex;
+        Align-items: center;
+        width: 90%;
+        margin-left: 30px;
     }
 
-    button{
-        display: flex;
-        justify-items: center;
-        margin-left: 200px;
+    .buttoncontainer{
+        margin-left: 210px;
     }
 
     .bottomtext{
-        width: 95%;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 50px; 
+        padding: 30px;
+        margin-left: 10px;
+      }
+
+      .servicescontainer{
+          margin-bottom: 35px;
+          margin-top: -10px;
+      }
+
+      .productcontainer{
+        margin-top: 35px;
     }
+
+    .visioncontainer{
+        margin-top: 35px;
+    }
+
+    .bottomborder{
+        margin-top: -70px;
+    }
+
+    .contact{
+        margin-left: 10px;
+    }
+
